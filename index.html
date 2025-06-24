@@ -3,28 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Webseite mit Formular</title>
+    <title>Regenhonig.de - Dein Honig von der Wangener Höhe</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            background-color: #20B2AA; /* Türkiser Hintergrund */
+            color: #000000; /* Schwarzer Text */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #000000;
+            border-bottom: 2px solid #ffc107; /* Honigfarbener Akzent */
+            padding-bottom: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            border: none;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #D9534F; /* Ein warmer, roter Akzent für den Namen */
+        }
+        .form-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #eee;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            font-size: 0.9em;
+            color: #000000;
         }
     </style>
 </head>
 <body>
 
-    <h1>Willkommen auf meiner Seite</h1>
-    <p>Dies ist eine einfache Webseite. Das nachfolgende Formular wird über einen externen Dienst geladen.</p>
+    <div class="container">
 
-    <!-- Start: Code für das Mailjet Formular -->
-    <iframe data-w-token="1214af39f0c959ae8b6e" data-w-type="pop-in" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://s8xv4.mjt.lu/wgt/s8xv4/0068/form?c=4f47bbbb" width="100%" style="height: 0;"></iframe>
-    <iframe data-w-token="1214af39f0c959ae8b6e" data-w-type="trigger" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://s8xv4.mjt.lu/wgt/s8xv4/0068/trigger?c=1367a245" width="100%" style="height: 0;"></iframe>
+        <img src="https://picsum.photos/800/300?image=1069" alt="Bienen auf einer Wabe" class="header-image">
 
-    <script type="text/javascript" src="https://app.mailjet.com/pas-nc-pop-in-v1.js"></script>
-    <!-- Ende: Code für das Mailjet Formular -->
+        <h1>Regenhonig.de</h1>
+        
+        <h2>Unser erster Sommerhonig ist da!</h2>
+        <p>
+            Hallo und herzlich willkommen! Ich freue mich riesig, denn der erste Honig dieses Sommers ist endlich da. Er kommt direkt von meinem "Stückle" auf der Wangener Höhe und trägt den besonderen Namen <span class="highlight">"KIMIA"</span>.
+        </p>
+        <p>
+            Diesen Namen verdankt der Honig meiner fleißigen Mithelferin Kimia, einer sehr jungen und begeisterten Nachwuchs-Imkerin, die mit viel Eifer bei der Sache war. Die Leidenschaft für die Imkerei und das Wohl der Bienen stehen bei mir immer im Mittelpunkt, und es ist toll, diese Freude zu teilen[1]. Ihre Neugier und ihr Lachen stecken in jedem Glas dieses einzigartigen Sommerhonigs!
+        </p>
 
-    <p>Hier können Sie weiteren Inhalt für Ihre Seite hinzufügen.</p>
+        <div class="form-container">
+            <h2>Bleib auf dem Laufenden!</h2>
+            <p>Trag dich hier ein, um Neuigkeiten rund um die Bienen und den nächsten Honig zu erhalten.</p>
+            
+            <!-- Start: Code für das Mailjet Formular -->
+            <iframe data-w-token="1214af39f0c959ae8b6e" data-w-type="pop-in" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://s8xv4.mjt.lu/wgt/s8xv4/0068/form?c=4f47bbbb" width="100%" style="height: 0;"></iframe>
+            <iframe data-w-token="1214af39f0c959ae8b6e" data-w-type="trigger" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://s8xv4.mjt.lu/wgt/s8xv4/0068/trigger?c=1367a245" width="100%" style="height: 0;"></iframe>
+            <script type="text/javascript" src="https://app.mailjet.com/pas-nc-pop-in-v1.js"></script>
+            <!-- Ende: Code für das Mailjet Formular -->
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Regenhonig.de</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
